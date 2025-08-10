@@ -1,0 +1,13 @@
+plugins {
+    id("java")
+}
+
+group = "net.weesli.veldoracore"
+
+repositories {
+    mavenCentral()
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
