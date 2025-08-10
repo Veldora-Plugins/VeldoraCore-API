@@ -18,4 +18,12 @@ public abstract class Addon {
 
     public abstract void onDisable();
 
+    public VeldoraCore getPlugin() {
+        return plugin;
+    }
+
+    public AddonSettingsFile getSettingsFile() {
+        return settingsFile;
+    }
+
 }
