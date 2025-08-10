@@ -6,7 +6,7 @@ public abstract class Addon {
     private final AddonSettingsFile settingsFile;
 
     public Addon() {
-        settingsFile = new AddonSettingsFile(this,this.getName());
+        settingsFile = new AddonSettingsFile(this);
     }
 
     public abstract String getName();
