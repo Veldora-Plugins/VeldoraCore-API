@@ -3,7 +3,11 @@ package net.weesli.veldoracore.api;
 public abstract class Addon {
 
     private final VeldoraCore plugin = VeldoraCore.getInstance();
-    private final AddonSettingsFile settingsFile = new AddonSettingsFile(this.getName());
+    private final AddonSettingsFile settingsFile;
+
+    public Addon() {
+        settingsFile = new AddonSettingsFile(this,this.getName());
+    }
 
     public abstract String getName();
 
