@@ -42,5 +42,9 @@ public class AddonSettingsFile {
             e.printStackTrace();
         }
     }
+    
+    public FileConfiguration get(){
+        return configuration;
+    }
 
 }
